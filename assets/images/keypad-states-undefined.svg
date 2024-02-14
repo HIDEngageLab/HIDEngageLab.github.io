@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="295px" preserveAspectRatio="none" style="width:385px;height:295px;" version="1.1" viewBox="0 0 385 295" width="385px" zoomAndPan="magnify"><defs/><g><rect fill="#FDFDFD" height="196.75" style="stroke: #0088EE; stroke-width: 1.0;" width="10" x="28.5" y="46.625"/><rect fill="#FDFDFD" height="130.5" style="stroke: #0088EE; stroke-width: 1.0;" width="10" x="33.5" y="103.875"/><rect fill="#FDFDFD" height="32.625" style="stroke: #0088EE; stroke-width: 1.0;" width="10" x="333.5" y="71.25"/><rect fill="#FDFDFD" height="32.625" style="stroke: #0088EE; stroke-width: 1.0;" width="10" x="333.5" y="136.5"/><rect fill="#FDFDFD" height="32.625" style="stroke: #0088EE; stroke-width: 1.0;" width="10" x="333.5" y="201.75"/><line style="stroke: #0088EE; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="33" x2="33" y1="36.625" y2="252.375"/><line style="stroke: #0088EE; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="338" x2="338" y1="36.625" y2="252.375"/><rect fill="#00FFAA" height="32.625" style="stroke: #0088EE; stroke-width: 1.5;" width="51" x="8" y="3"/><text fill="#111111" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="37" x="15" y="24.8516">Host</text><rect fill="#00FFAA" height="32.625" style="stroke: #0088EE; stroke-width: 1.5;" width="51" x="8" y="251.375"/><text fill="#111111" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="37" x="15" y="273.2266">Host</text><rect fill="#00FFAA" height="32.625" style="stroke: #0088EE; stroke-width: 1.5;" width="71" x="303" y="3"/><text fill="#111111" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="57" x="310" y="24.8516">Keypad</text><rect fill="#00FFAA" height="32.625" style="stroke: #0088EE; stroke-width: 1.5;" width="71" x="303" y="251.375"/><text fill="#111111" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="57" x="310" y="273.2266">Keypad</text><rect fill="#FDFDFD" height="196.75" style="stroke: #0088EE; stroke-width: 1.0;" width="10" x="28.5" y="46.625"/><rect fill="#FDFDFD" height="130.5" style="stroke: #0088EE; stroke-width: 1.0;" width="10" x="33.5" y="103.875"/><rect fill="#FDFDFD" height="32.625" style="stroke: #0088EE; stroke-width: 1.0;" width="10" x="333.5" y="71.25"/><rect fill="#FDFDFD" height="32.625" style="stroke: #0088EE; stroke-width: 1.0;" width="10" x="333.5" y="136.5"/><rect fill="#FDFDFD" height="32.625" style="stroke: #0088EE; stroke-width: 1.0;" width="10" x="333.5" y="201.75"/><line style="stroke: #0088EE; stroke-width: 1.0;" x1="331.5" x2="321.5" y1="71.25" y2="67.25"/><line style="stroke: #0088EE; stroke-width: 1.0;" x1="331.5" x2="321.5" y1="71.25" y2="75.25"/><line style="stroke: #0088EE; stroke-width: 1.0;" x1="38.5" x2="332.5" y1="71.25" y2="71.25"/><text fill="#111111" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="11" x="45.5" y="65.4766">1</text><text fill="#111111" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="189" x="60.5" y="65.4766">GADGET+REQ (MOUNT)</text><line style="stroke: #0088EE; stroke-width: 1.0;" x1="43.5" x2="53.5" y1="103.875" y2="99.875"/><line style="stroke: #0088EE; stroke-width: 1.0;" x1="43.5" x2="53.5" y1="103.875" y2="107.875"/><line style="stroke: #0088EE; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="43.5" x2="337.5" y1="103.875" y2="103.875"/><text fill="#111111" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="11" x="60.5" y="98.1016">2</text><text fill="#111111" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="203" x="75.5" y="98.1016">GADGET+CFM (SUCCESS)</text><line style="stroke: #0088EE; stroke-width: 1.0;" x1="331.5" x2="321.5" y1="136.5" y2="132.5"/><line style="stroke: #0088EE; stroke-width: 1.0;" x1="331.5" x2="321.5" y1="136.5" y2="140.5"/><line style="stroke: #0088EE; stroke-width: 1.0;" x1="43.5" x2="332.5" y1="136.5" y2="136.5"/><text fill="#111111" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="11" x="50.5" y="130.7266">3</text><text fill="#111111" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="189" x="65.5" y="130.7266">GADGET+REQ (MOUNT)</text><line style="stroke: #0088EE; stroke-width: 1.0;" x1="43.5" x2="53.5" y1="169.125" y2="165.125"/><line style="stroke: #0088EE; stroke-width: 1.0;" x1="43.5" x2="53.5" y1="169.125" y2="173.125"/><line style="stroke: #0088EE; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="43.5" x2="337.5" y1="169.125" y2="169.125"/><text fill="#111111" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="11" x="60.5" y="163.3516">4</text><text fill="#111111" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="251" x="75.5" y="163.3516">GADGET+CFM (WRONG_STATE)</text><line style="stroke: #0088EE; stroke-width: 1.0;" x1="331.5" x2="321.5" y1="201.75" y2="197.75"/><line style="stroke: #0088EE; stroke-width: 1.0;" x1="331.5" x2="321.5" y1="201.75" y2="205.75"/><line style="stroke: #0088EE; stroke-width: 1.0;" x1="43.5" x2="332.5" y1="201.75" y2="201.75"/><text fill="#111111" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="11" x="50.5" y="195.9766">5</text><text fill="#111111" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="213" x="65.5" y="195.9766">GADGET+REQ (UNMOUNT)</text><line style="stroke: #0088EE; stroke-width: 1.0;" x1="38.5" x2="48.5" y1="234.375" y2="230.375"/><line style="stroke: #0088EE; stroke-width: 1.0;" x1="38.5" x2="48.5" y1="234.375" y2="238.375"/><line style="stroke: #0088EE; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="38.5" x2="337.5" y1="234.375" y2="234.375"/><text fill="#111111" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="11" x="55.5" y="228.6016">6</text><text fill="#111111" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="203" x="70.5" y="228.6016">GADGET+CFM (SUCCESS)</text><!--MD5=[697e00666e829a7d34cef724ebedd9a2]
+@startuml keypad-states-undefined
+
+skinparam useBetaStyle true
+skinparam shadowing false
+
+<style>
+    sequenceDiagram {
+        BackGroundColor #fdfdfd
+        FontColor #111
+        FontStyle "Roboto,Helvetica,Arial,sans-serif"
+        FontSize 16
+
+        lifeline {
+            LineColor #0088ee
+        }
+
+        arrow {
+            FontColor #111
+            LineColor #0088ee
+        }
+
+        participant {
+            BackGroundColor #00ffaa
+            LineColor #0088ee
+        }
+    }
+}
+</style>
+
+autonumber
+
+participant Host 
+participant Keypad 
+
+activate Host
+Host ->> Keypad: GADGET+REQ (MOUNT)
+activate Keypad
+Keypad - ->> Host: GADGET+CFM (SUCCESS)
+deactivate Keypad
+
+activate Host
+Host ->> Keypad: GADGET+REQ (MOUNT)
+activate Keypad
+Keypad - ->> Host: GADGET+CFM (WRONG_STATE)
+deactivate Keypad
+
+Host ->> Keypad: GADGET+REQ (UNMOUNT)
+activate Keypad
+Keypad - ->> Host: GADGET+CFM (SUCCESS)
+deactivate Keypad
+deactivate Host
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 11:22:07 CET 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.21+9-post-Ubuntu-0ubuntu122.04
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

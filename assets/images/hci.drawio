@@ -1,0 +1,46 @@
+<mxfile host="Electron" modified="2024-01-05T09:06:59.298Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.16 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="8rUBzqdmP9DR_3u5AYHK" version="22.1.16" type="device">
+  <diagram name="eval-context" id="uaO3eY4sLVITPIqj7mz4">
+    <mxGraphModel dx="546" dy="348" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mIR5YaAALADEb5kRN-0p-9" value="EVAL" style="rounded=0;whiteSpace=wrap;html=1;align=right;verticalAlign=top;fillColor=#eeeeee;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="400" y="320" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="mIR5YaAALADEb5kRN-0p-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;endArrow=none;endFill=0;" edge="1" parent="1" source="mIR5YaAALADEb5kRN-0p-2" target="mIR5YaAALADEb5kRN-0p-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mIR5YaAALADEb5kRN-0p-6" value="USB" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="mIR5YaAALADEb5kRN-0p-4">
+          <mxGeometry x="-0.1" y="-1" relative="1" as="geometry">
+            <mxPoint x="4" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mIR5YaAALADEb5kRN-0p-2" value="PC" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="350" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mIR5YaAALADEb5kRN-0p-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;endArrow=classicThin;endFill=1;" edge="1" parent="1" source="mIR5YaAALADEb5kRN-0p-3" target="mIR5YaAALADEb5kRN-0p-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mIR5YaAALADEb5kRN-0p-10" value="RX" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="mIR5YaAALADEb5kRN-0p-7">
+          <mxGeometry x="0.59" relative="1" as="geometry">
+            <mxPoint x="-2" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mIR5YaAALADEb5kRN-0p-3" value="USB-TTL" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="280" y="360" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mIR5YaAALADEb5kRN-0p-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;endArrow=classicThin;endFill=1;" edge="1" parent="1" source="mIR5YaAALADEb5kRN-0p-5" target="mIR5YaAALADEb5kRN-0p-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mIR5YaAALADEb5kRN-0p-11" value="TX" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="mIR5YaAALADEb5kRN-0p-8">
+          <mxGeometry x="-0.64" y="1" relative="1" as="geometry">
+            <mxPoint x="-3" y="9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mIR5YaAALADEb5kRN-0p-5" value="KEYPAD" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#00ffaa;strokeColor=#0088ee;" vertex="1" parent="1">
+          <mxGeometry x="400" y="360" width="80" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

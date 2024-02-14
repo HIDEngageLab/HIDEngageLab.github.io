@@ -1,0 +1,55 @@
+@startuml keypad-states-record-stop
+
+skinparam useBetaStyle true
+skinparam shadowing false
+
+<style>
+    sequenceDiagram {
+        BackGroundColor #fdfdfd
+        FontColor #111
+        FontStyle "Roboto,Helvetica,Arial,sans-serif"
+        FontSize 16
+
+        lifeline {
+            LineColor #0088ee
+        }
+
+        arrow {
+            FontColor #111
+            LineColor #0088ee
+        }
+
+        participant {
+            BackGroundColor #00ffaa
+            LineColor #0088ee
+        }
+    }
+}
+</style>
+
+autonumber
+
+participant Host
+participant Keypad
+
+activate Host
+Host ->> Keypad: STATUS+REQ (START)
+activate Keypad
+Keypad -->> Host: STATUS+CFM (START IDLE)
+Keypad ->> Keypad : set ACTIVE
+Keypad ->> Host: STATUS+IND (ACTIVE)
+
+Host ->> Keypad: STATUS+REQ (RECORD)
+Keypad -->> Host: STATUS+CFM (WRONG_MODE)
+
+Host ->> Keypad: STATUS+REQ (PLAY)
+Keypad -->> Host: STATUS+CFM (WRONG_MODE)
+
+Host ->> Keypad: STATUS+REQ (STOP)
+Keypad -->> Host: STATUS+CFM (RECORD ACTIVE) 
+Keypad ->> Keypad : set IDLE
+Keypad ->> Host: STATUS+IND (RECORD IDLE)
+deactivate Keypad
+deactivate Host
+
+@enduml

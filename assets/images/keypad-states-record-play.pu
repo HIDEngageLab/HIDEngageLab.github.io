@@ -1,0 +1,51 @@
+@startuml keypad-states-record-play
+
+skinparam useBetaStyle true
+skinparam shadowing false
+
+<style>
+sequenceDiagram {
+    BackGroundColor #fdfdfd
+    FontColor #111
+    FontStyle "Roboto,Helvetica,Arial,sans-serif"
+    FontSize 16
+
+    lifeline {
+        LineColor #0088ee
+    }
+
+    arrow {
+        FontColor #111
+        LineColor #0088ee
+    }
+
+    participant {
+        BackGroundColor #00ffaa
+        LineColor #0088ee
+    }
+}
+}
+</style>
+
+autonumber
+
+participant Host
+participant Keypad
+
+activate Host
+Host ->> Keypad: STATUS+REQ (RECORD)
+activate Keypad
+Keypad -->> Host: STATUS+CFM
+Keypad ->> Keypad : set RECORD
+Keypad ->> Host: STATUS+IND (RECORD)
+deactivate Keypad
+
+Host ->> Keypad: STATUS+REQ (PLAY)
+activate Keypad
+Keypad -->> Host: STATUS+CFM
+Keypad ->> Keypad : set PLAY
+Keypad ->> Host: STATUS+IND (PLAY)
+deactivate Keypad
+deactivate Host
+
+@enduml

@@ -1,0 +1,55 @@
+@startuml keypad-states-undefined
+
+skinparam useBetaStyle true
+skinparam shadowing false
+
+<style>
+    sequenceDiagram {
+        BackGroundColor #fdfdfd
+        FontColor #111
+        FontStyle "Roboto,Helvetica,Arial,sans-serif"
+        FontSize 16
+
+        lifeline {
+            LineColor #0088ee
+        }
+
+        arrow {
+            FontColor #111
+            LineColor #0088ee
+        }
+
+        participant {
+            BackGroundColor #00ffaa
+            LineColor #0088ee
+        }
+    }
+}
+</style>
+
+autonumber
+
+participant Host 
+' is colored in #0088ee #00ffaa
+participant Keypad 
+' is colored in #0088ee #00ffaa
+
+activate Host
+Host ->> Keypad: GADGET+REQ (MOUNT)
+activate Keypad
+Keypad -->> Host: GADGET+CFM (SUCCESS)
+deactivate Keypad
+
+activate Host
+Host ->> Keypad: GADGET+REQ (MOUNT)
+activate Keypad
+Keypad -->> Host: GADGET+CFM (WRONG_STATE)
+deactivate Keypad
+
+Host ->> Keypad: GADGET+REQ (UNMOUNT)
+activate Keypad
+Keypad -->> Host: GADGET+CFM (SUCCESS)
+deactivate Keypad
+deactivate Host
+
+@enduml

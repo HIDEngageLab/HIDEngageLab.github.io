@@ -1,0 +1,44 @@
+digraph EvalContextHci {
+    layout=dot
+    splines=ortho
+    overlap=false
+    
+    rankdir=LR
+    ranksep=0.8
+    nodesep=0.12
+    newrank=false
+
+    fontname="Roboto,Helvetica,Arial,sans-serif"
+    fontsize=12
+
+    bb="0,0,800,170"
+
+    node [shape=record, fontname="Roboto,Helvetica,Arial,sans-serif", fontsize=12]
+    edge [fontname="Roboto,Helvetica,Arial,sans-serif", fontsize=12]
+
+    labeldistance=0.8
+    labelfloat=true
+    
+    node0 [label="HOST" fixedsize=true width=1.2 height=1.2 style=filled fillcolor="#ffffff"]
+    node1 [label="USB-TTL" fixedsize=true width=1.0 height=0.4 style=filled fillcolor="#f1f1f1"]
+    node3 [xlabel=" " style=invis fixedsize=true, width=1.0, height=0]
+    
+    node0 -> node1 [dir=none label="USB"]
+    node0 -> node3 [xlabel=" " style=invis]
+    
+    subgraph cluster1 {
+        label="EVAL"
+        labeljust=r
+        
+        style=filled
+        fillcolor="#f1f1f1"
+
+        node2 [label="KEYPAD" fixedsize=true width=1.5 height=0.8 color="#0088ee" style=filled fillcolor="#00ffaa"]
+        node4 [fixedsize=true width=0.1 height=0.5 style=invis]
+        node2 -> node4 [xlabel="ph" style=invis]
+    }
+
+    node1 -> node2 [label="HCI:TX/RX" dir=none];
+
+    node3 -> node2 [label="HID:USB" dir=both arrowhead=none arrowtail=odot]
+}

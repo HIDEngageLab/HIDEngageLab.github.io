@@ -1,0 +1,8 @@
+<svg class="icon" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="#111" fill="#fdfdfd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="1" y="1" rx="3" ry="3" width="22" height="22" />
+        <g transform="scale(0.9), translate(1.2,1.2)">
+            <path d="M14 10L21 3M14 10H18.5M14 10V5.5M10 14L3 21M10 14H5.5M10 14L10 18.5" />
+        </g>
+    </g>
+</svg>

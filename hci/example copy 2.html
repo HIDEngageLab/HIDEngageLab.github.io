@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Web Component Example</title>
+    <style>
+      x {
+        border: solid 1px;
+        border-color: blue;
+        margin: 0;
+        font-family: monospace, courier;
+        padding: 2.5px;
+        background-color: green;
+        color: darkgray;
+      }
+      /*
+        
+      y {
+        background-color: white;
+        border: none;
+        padding: 0em;
+        margin: 0em;
+        margin-left: 1em;
+        width: 24px;
+        height: 24px;
+        scale: 1;
+        vertical-align: bottom;
+      }
+      */
+
+      /* Beispiel-Stile für das benutzerdefinierte Element */
+      x-mit-button {
+        border: solid 1px black;
+        background-color: #4caf50;
+        color: white;
+        padding: 0px 0px;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+
+      .content {
+        display: block;
+      }
+
+      x-mit-button button {
+        margin-left: 15em;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Definition des benutzerdefinierten Elements -->
+    <script>
+      class XMitButton extends HTMLElement {
+        constructor() {
+          super();
+        }
+
+        connectedCallback() {
+          // Textinhalt vor dem Button-Teil einfügen
+          this.innerHTML =
+            `<dic class ="content" id="${this.getAttribute("id")}">${
+              this.textContent
+            }</div>` + `<button class="y" onclick="foo(this)">COPY</button>`;
+        }
+      }
+      // Benutzerdefiniertes Element registrieren
+      customElements.define("x-mit-button", XMitButton);
+    </script>
+
+    <!-- Verwendung des benutzerdefinierten Elements -->
+
+    Bla example:
+
+    <x-mit-button id="bla">Text 1</x-mit-button>
+
+    FOO example:
+
+    <x-mit-button id="foo">Text 2</x-mit-button>
+
+    bar() example:
+
+    <x-mit-button id="bar">Text 3</x-mit-button>
+
+    <script>
+      function foo(element) {
+        // Hier können Sie die Funktionalität für den Button hinzufügen
+        console.log("Button wurde geklickt!");
+
+        var previousElement = element.previousElementSibling;
+        if (previousElement) {
+          var previousElementId = previousElement.id;
+          var previousElementName = previousElement.tagName;
+          console.log("ID des vorherigen Elements: " + previousElementId);
+          console.log("NAME des vorherigen Elements: " + previousElementName);
+        }
+      }
+    </script>
+  </body>
+</html>

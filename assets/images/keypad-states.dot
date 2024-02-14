@@ -1,0 +1,40 @@
+digraph keypadStates {
+    layout=dot
+    splines=true
+    overlap=false
+
+    rankdir=LR
+    //ranksep=0.5
+    //nodesep=0.12
+    //newrank=false
+
+    fontname="Roboto,Helvetica,Arial,sans-serif"
+    fontsize=12
+    fontcolor="#111111"
+
+    bb="0,0,800,170"
+
+    start[label="" shape=circle style=filled fillcolor="#000000" fixedsize=true width="0.17px"]
+
+    node[shape="circle" height="1" width="1" fontname="Roboto,Helvetica,Arial,sans-serif" fontsize=12 color="#0088ee"]
+    edge[fontname="Roboto,Helvetica,Arial,sans-serif" fontsize=12 color="#0088ee"]
+    
+    IDLE[label="IDLE"]
+    ACTIVE[label="ACTIVE"]
+    SUSPEND[label="SUSPEND"]
+    PENDING[label="PENDING"]
+
+    start -> IDLE [label="init"]
+
+    IDLE -> ACTIVE [label="MOUNT" ]
+    ACTIVE -> SUSPEND [label="SUSPEND"]
+    SUSPEND -> ACTIVE [label="RESUME"]
+
+    ACTIVE -> PENDING [label="UNMOUNT"]
+    PENDING -> IDLE [label="cleanup"]
+
+    IDLE -> SUSPEND [label="SUSPEND"]
+    ACTIVE -> ACTIVE [label="event"]
+
+}
+

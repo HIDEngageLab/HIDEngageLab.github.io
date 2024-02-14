@@ -1,0 +1,27 @@
+<!-- Start copypaste.html -->
+<script>
+  function CopyExample(element) {
+    var previousElement = element.previousElementSibling;
+    if (previousElement) {
+      var previousElementId = previousElement.id;
+      var previousElementName = previousElement.tagName;
+      console.log("ID des vorherigen Elements: " + previousElementId);
+      console.log("NAME des vorherigen Elements: " + previousElementName);
+      if (previousElementName === "SAMP") {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(previousElementId));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        var textExample = window.getSelection().toString().replace(/\s/g, "");
+        navigator.clipboard.writeText(textExample);
+        window.getSelection().removeAllRanges();
+        console.log("done");
+      } else {
+        console.log("Es gibt kein passendes Element.");
+      }
+    } else {
+      console.log("Es gibt kein vorheriges Element.");
+    }
+  }
+</script>
+<!-- End copypaste.html -->

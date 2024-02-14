@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Web Component Example</title>
+    <style>
+      /* Beispiel-Stile für das benutzerdefinierte Element */
+      x-mit-button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Definition des benutzerdefinierten Elements -->
+    <script>
+      class XMitButton extends HTMLElement {
+        constructor() {
+          super();
+        }
+
+        connectedCallback() {
+          // Fügen Sie den HTML-Inhalt und die Funktionalität hinzu
+          this.innerHTML = `<x id="${this.getAttribute("id")}">${
+            this.textContent
+          }</x>\n<button onclick="foo(this)">Click me</button>`;
+        }
+      }
+      // Benutzerdefiniertes Element registrieren
+      customElements.define("x-mit-button", XMitButton);
+    </script>
+
+    <!-- Verwendung des benutzerdefinierten Elements -->
+    <x-mit-button id="bla">Text 1</x-mit-button>
+    <x-mit-button id="foo">Text 2</x-mit-button>
+    <x-mit-button id="bar">Text 3</x-mit-button>
+
+    <script>
+      function foo(element) {
+        // Hier können Sie die Funktionalität für den Button hinzufügen
+        console.log("Button wurde geklickt!");
+
+        var previousElement = element.previousElementSibling;
+        if (previousElement) {
+          var previousElementId = previousElement.id;
+          var previousElementName = previousElement.tagName;
+          console.log("ID des vorherigen Elements: " + previousElementId);
+          console.log("NAME des vorherigen Elements: " + previousElementName);
+        }
+      }
+    </script>
+  </body>
+</html>

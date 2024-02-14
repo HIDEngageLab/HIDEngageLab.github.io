@@ -1,0 +1,36 @@
+<svg width="24px" height="24px" xmlns="http://www.w3.org/2000/svg">
+    <filter id="glow"  filterUnits="userSpaceOnUse">
+        <!--
+            <feGaussianBlur stdDeviation="1" />
+        -->
+        <!-- 
+            <feColorMatrix in="StrokePaint" 
+            type="matrix" 
+            values="
+            0 0    0    0 0
+            0 0.61 0    0 0
+            0 0    0.94 0 0
+            0 0    0    1 0" />
+        -->
+        <feColorMatrix in="StrokePaint" 
+        type="matrix" 
+        values="
+        0 0    0    0 0
+        0 1.01 0    0 0
+        0 0    0.65 0 0
+        0 0    0    1 0" />
+    <!--
+        <feColorMatrix in="StrokePaint" 
+        type="matrix" 
+        values="1 0 0 0 0
+                0 0.5 0 0 0
+                0 0 1 0 0
+                0 0 0 1 0" style="stroke:#0088ee"/>
+        -->
+
+        <!-- 
+            <feFlood x="0" y="0" width="24" height="24" flood-color="#0088ee" flood-opacity="0.5"> </feFlood>
+        -->
+        
+    </filter>
+</svg>
